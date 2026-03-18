@@ -6,6 +6,14 @@
 version: 2
 updates:
   - package-ecosystem: "docker-compose" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directory: "/classic" # Location of package manifests
     schedule:
       interval: "weekly"
+  - package-ecosystem: "docker-compose" # See documentation for possible values
+    directory: "/dns" # Location of package manifests
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "docker-compose" # See documentation for possible values
+    directory: "/script" # Location of package manifests
+    schedule:
+      interval: "weekly"      
